@@ -9,19 +9,23 @@ public class ARManager : MonoBehaviour
     public GameObject note;
     public GameObject block;
 
-    private bool isbBlockVisible;
-    private bool isBottleVisible;
-    private bool isNoteVisible;
+    private enum State
+    {
+        Block = 0,
+        Bottle = 1,
+        Note = 2
+    }
+    private State state;
 
     void Start()
     {
         // Setup the visibility of objects
-        isbBlockVisible = true;
-        isBottleVisible = true;
-        isNoteVisible = false;
-        block.SetActive(isbBlockVisible);
-        bottle.SetActive(isBottleVisible);
-        note.SetActive(isNoteVisible);
+        block.SetActive(true);
+        bottle.SetActive(false);
+        note.SetActive(false);
+
+        // Set the initial state of the app
+        state = State.Block;
 
         // This debug message appears in console window
         // when play is clicked in Unity
@@ -45,8 +49,24 @@ public class ARManager : MonoBehaviour
             // If any of the object (with a collision script) has been clicked
             if (collision)
             {
-                isNoteVisible = !isNoteVisible;
-                note.SetActive(isNoteVisible);
+                if (state == State.Block)
+                {
+                    this.state = State.Bottle;
+                    block.SetActive(false);
+                    bottle.SetActive(true);
+                }
+                else if (state == State.Bottle)
+                {
+                    this.state = State.Note;
+                    bottle.SetActive(false);
+                    note.SetActive(true);
+                }
+                else
+                {
+                    this.state = State.Block;
+                    note.SetActive(false);
+                    block.SetActive(true);
+                }
             }
         }
     }
