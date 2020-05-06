@@ -487,7 +487,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 354635703}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.3, z: 0}
+  m_LocalPosition: {x: 0, y: -0.4, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 0}
@@ -568,12 +568,12 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 2f7bd9f7a4892fa44b72e585af91afd4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.38
+      value: 0.32
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 2f7bd9f7a4892fa44b72e585af91afd4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.67
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 2f7bd9f7a4892fa44b72e585af91afd4,
         type: 3}
@@ -1377,7 +1377,7 @@ RectTransform:
   m_GameObject: {fileID: 992395217}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2091663123}
   m_Father: {fileID: 1918171077}
@@ -1385,8 +1385,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 390, y: -210}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 400, y: -928}
+  m_SizeDelta: {x: 320, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &992395219
 MonoBehaviour:
@@ -1688,12 +1688,12 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 0da23fc73193cc04a812a18bbe345b70,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.1
+      value: -0.15
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0da23fc73193cc04a812a18bbe345b70,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.65
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0da23fc73193cc04a812a18bbe345b70,
         type: 3}
@@ -2753,11 +2753,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 27
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 40
+    m_MaxSize: 50
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
