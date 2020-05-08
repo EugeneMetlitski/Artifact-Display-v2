@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.XR.ARFoundation;
 
 public class ARManager : MonoBehaviour
@@ -8,6 +9,8 @@ public class ARManager : MonoBehaviour
     public GameObject bottle;
     public GameObject note;
     public GameObject block;
+
+    [SerializeField] private Button btnRestart = null; // assign in the editor
 
     private enum State
     {
