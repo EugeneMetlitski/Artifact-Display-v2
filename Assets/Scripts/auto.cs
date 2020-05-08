@@ -13,12 +13,13 @@ public class auto : MonoBehaviour
 
     void RestartGameInvoke()
     {
-        if(Input.anyKeyDown){
+        if(Input.anyKeyDown)
+        {
             CancelInvoke();
         }
         else
         {
-        Invoke ("ResetScene", 10);
+            Invoke ("ResetScene", 10);
         }
     }
 
