@@ -1,9 +1,13 @@
-﻿using UnityEngine.SceneManagement;
+﻿using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class reset : MonoBehaviour
+public class Reset : MonoBehaviour
 {
-    public void Restart(){
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    public string mainSceneName = "Main";
+
+    public void OnClick()
+    {
+        SceneManager.LoadScene(mainSceneName);
     }
 }

@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 
-public class des : MonoBehaviour
+public class Des : MonoBehaviour
 {
+    public float destroyInSeconds = 3.0f;
+
     void Start()
     {
-        Destroy(gameObject, 3);
+        Destroy(gameObject, destroyInSeconds);
     }
 }
