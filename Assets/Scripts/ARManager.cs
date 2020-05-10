@@ -5,10 +5,18 @@ public class ARManager : MonoBehaviour
 {
     // Editor Fields
     public ARSessionOrigin sessionOrigin;
+    public GameObject block;
     public GameObject bottle;
     public GameObject note;
-    public GameObject block;
     public GameObject btnReset;
+    public float dragSpeedX = 0.001f;
+    public float dragSpeedY = 0.01f;
+
+    // Private Fields
+    private Vector3 mouseNewPos;
+    private Vector3 mousePrevPos;
+    enum MouseState { Up = 0, Down = 1, Dragged = 2, BottleDragged = 3, NoteDragged = 4 }
+    private MouseState mouseState;
 
     void Start()
     {
@@ -16,36 +24,100 @@ public class ARManager : MonoBehaviour
         block.SetActive(true);
         bottle.SetActive(false);
         note.SetActive(false);
+        mouseState = MouseState.Up;
 
         //Debug.Log("Program Started");
     }
 
     void Update()
     {
-        // If any part of the screen was clicked
-        if (Input.GetMouseButtonDown(0))
+        // If click has been released on any part of the screen
+        if (Input.GetMouseButtonUp(0))
         {
             // Send a ray to figure out if any object was hit by the ray
             Ray ray = sessionOrigin.camera.ScreenPointToRay(Input.mousePosition);
 
-            // If the ray collided with an object
-            if (Physics.Raycast(ray, out RaycastHit hit, 10))
+            // If the ray collided with an object and object is not being dragged
+            if (Physics.Raycast(ray, out RaycastHit hit, 10) && mouseState == MouseState.Down)
             {
                 if (hit.transform.name == "Block")
                 {
-                    block.SetActive(false);
                     bottle.SetActive(true);
+                    block.GetComponent<Distructible>().Destroy();
                 }
                 else if (hit.transform.name == "Bottle")
                 {
-                    bottle.SetActive(false);
                     note.SetActive(true);
+                    bottle.GetComponent<Distructible>().Destroy();
                 }
                 else if (hit.transform.name == "Note")
                 {
                     Debug.Log("Note clicked.");
                 }
             }
+            mouseState = MouseState.Up;
+        }
+        // If the mouse has been dragged
+        else if (IsMouseDragged())
+        {
+            // If the dragging of the mouse has just started
+            if (mouseState == MouseState.Down)
+            {
+                mouseState = MouseState.Dragged; // Indicate that the mouse is dragged
+
+                // Figure out if the mouse has hit any object when it started dragging
+                Ray ray = sessionOrigin.camera.ScreenPointToRay(Input.mousePosition);
+                if (Physics.Raycast(ray, out RaycastHit hit, 10))
+                {
+                    if (hit.transform.name == "Bottle")
+                        mouseState = MouseState.BottleDragged;
+                    else if (hit.transform.name == "Note")
+                        mouseState = MouseState.NoteDragged;
+                }
+            }
+            // If the bottle is dragged
+            else if (mouseState == MouseState.BottleDragged)
+            {
+                bottle.transform.position = new Vector3(
+                    bottle.transform.position.x + (mouseNewPos.x - mousePrevPos.x) * dragSpeedX,
+                    bottle.transform.position.y,
+                    bottle.transform.position.z + (mouseNewPos.y - mousePrevPos.y) * dragSpeedY
+                );
+            }
+            // If the note is dragged
+            else if (mouseState == MouseState.NoteDragged)
+            {
+                note.transform.position = new Vector3(
+                    note.transform.position.x + (mouseNewPos.x - mousePrevPos.x) * dragSpeedX,
+                    note.transform.position.y,
+                    note.transform.position.z + (mouseNewPos.y - mousePrevPos.y) * dragSpeedY
+                );
+            }
+            // Update the previous mouse position
+            mousePrevPos = mouseNewPos;
+        }
+    }
+
+    private bool IsMouseDragged()
+    {
+        // If the mouse has been pressed down
+        if (Input.GetMouseButtonDown(0))
+        {
+            mouseState = MouseState.Down;
+            mousePrevPos = Input.mousePosition;
+            return false;
+        }
+        // If mouse is being held down
+        else if (Input.GetMouseButton(0))
+        {
+            mouseNewPos = Input.mousePosition;
+            // If the position of the mouse has changed return true
+            return (mouseNewPos != mousePrevPos) ? true : false;
+        }
+        else
+        {
+            // If mouse has not been clicked down, return false
+            return false;
         }
     }
 }

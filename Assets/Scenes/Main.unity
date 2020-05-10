@@ -1060,6 +1060,20 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 343502114}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &574528435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574528432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4b233bbe44747d45a300549a5cb7e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 90
+  note: {fileID: 574528432}
 --- !u!1 &626862530
 GameObject:
   m_ObjectHideFlags: 0
@@ -2584,13 +2598,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.9999999, y: 1.9999995, z: 1.9999995}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!4 &1167076395 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 0da23fc73193cc04a812a18bbe345b70,
-    type: 3}
-  m_PrefabInstance: {fileID: 1167076390}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1167076396
+--- !u!114 &1167076393
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2604,6 +2612,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destroyed: {fileID: 1764218406629632527, guid: fe2b05e170ac245618cebd300b7aaad7,
     type: 3}
+--- !u!4 &1167076395 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 0da23fc73193cc04a812a18bbe345b70,
+    type: 3}
+  m_PrefabInstance: {fileID: 1167076390}
+  m_PrefabAsset: {fileID: 0}
 --- !u!54 &1167076398
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3123,7 +3137,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1516613088}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1516613091
+--- !u!114 &1516613090
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3900,9 +3914,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sessionOrigin: {fileID: 781407487}
-  bottle: {fileID: 1516613089}
-  note: {fileID: 574528432}
   block: {fileID: 1167076391}
+  blockDestroyed: {fileID: 1764218406629632527, guid: fe2b05e170ac245618cebd300b7aaad7,
+    type: 3}
+  bottle: {fileID: 1516613089}
+  bottleDestroyed: {fileID: 3680621729656951148, guid: 95ea2e695140146b88f304314d61981a,
+    type: 3}
+  note: {fileID: 574528432}
   btnReset: {fileID: 992395217}
 --- !u!114 &1989010988
 MonoBehaviour:
