@@ -7,6 +7,7 @@ public class ARManager : MonoBehaviour
     public ARSessionOrigin sessionOrigin;
     public GameObject block;
     public GameObject bottle;
+    public GameObject noteContainer;
     public GameObject note;
     public GameObject btnReset;
     public float dragSpeedX = 0.001f;
@@ -23,7 +24,7 @@ public class ARManager : MonoBehaviour
         // Setup the visibility of objects
         block.SetActive(true);
         bottle.SetActive(false);
-        note.SetActive(false);
+        noteContainer.SetActive(false);
         mouseState = MouseState.Up;
 
         //Debug.Log("Program Started");
@@ -47,12 +48,12 @@ public class ARManager : MonoBehaviour
                 }
                 else if (hit.transform.name == "Bottle")
                 {
-                    note.SetActive(true);
+                    noteContainer.SetActive(true);
                     bottle.GetComponent<Distructible>().Destroy();
                 }
-                else if (hit.transform.name == "Note")
+                else if (hit.transform.name == "Note-Object")
                 {
-                    Debug.Log("Note clicked.");
+                    note.GetComponent<Rotate>().RotateAround();
                 }
             }
             mouseState = MouseState.Up;
@@ -71,7 +72,7 @@ public class ARManager : MonoBehaviour
                 {
                     if (hit.transform.name == "Bottle")
                         mouseState = MouseState.BottleDragged;
-                    else if (hit.transform.name == "Note")
+                    else if (hit.transform.name == "Note-Object")
                         mouseState = MouseState.NoteDragged;
                 }
             }
@@ -87,10 +88,10 @@ public class ARManager : MonoBehaviour
             // If the note is dragged
             else if (mouseState == MouseState.NoteDragged)
             {
-                note.transform.position = new Vector3(
-                    note.transform.position.x + (mouseNewPos.x - mousePrevPos.x) * dragSpeedX,
-                    note.transform.position.y,
-                    note.transform.position.z + (mouseNewPos.y - mousePrevPos.y) * dragSpeedY
+                noteContainer.transform.position = new Vector3(
+                    noteContainer.transform.position.x + (mouseNewPos.x - mousePrevPos.x) * dragSpeedX,
+                    noteContainer.transform.position.y,
+                    noteContainer.transform.position.z + (mouseNewPos.y - mousePrevPos.y) * dragSpeedY
                 );
             }
             // Update the previous mouse position
