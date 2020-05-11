@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class des : MonoBehaviour
+public class Destroy : MonoBehaviour
 {
     void Start()
     {
