@@ -4301,9 +4301,9 @@ MonoBehaviour:
   bottle: {fileID: 1516613089}
   noteContainer: {fileID: 1043063849}
   note: {fileID: 845646927}
-  btnReset: {fileID: 992395217}
   dragSpeedX: 0.001
-  dragSpeedY: 0.01
+  dragSpeedY: 0.002
+  minDragDistance: 10
 --- !u!114 &1989010988
 MonoBehaviour:
   m_ObjectHideFlags: 0

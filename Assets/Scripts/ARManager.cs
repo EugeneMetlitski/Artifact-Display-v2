@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 
 public class ARManager : MonoBehaviour
@@ -9,9 +10,9 @@ public class ARManager : MonoBehaviour
     public GameObject bottle;
     public GameObject noteContainer;
     public GameObject note;
-    public GameObject btnReset;
     public float dragSpeedX = 0.001f;
-    public float dragSpeedY = 0.01f;
+    public float dragSpeedY = 0.0001f;
+    public float minDragDistance = 5.0f;
 
     // Private Fields
     private Vector3 mouseNewPos;
@@ -64,16 +65,23 @@ public class ARManager : MonoBehaviour
             // If the dragging of the mouse has just started
             if (mouseState == MouseState.Down)
             {
-                mouseState = MouseState.Dragged; // Indicate that the mouse is dragged
+                // Calculate the distance the mouse has travelled from when mouse was first down
+                float mouseMovedDistance = Vector3.Distance(mouseNewPos, mousePrevPos);
 
-                // Figure out if the mouse has hit any object when it started dragging
-                Ray ray = sessionOrigin.camera.ScreenPointToRay(Input.mousePosition);
-                if (Physics.Raycast(ray, out RaycastHit hit, 10))
+                // If the mouse has moved significant distance to start dragging and object
+                if (mouseMovedDistance > minDragDistance)
                 {
-                    if (hit.transform.name == "Bottle")
-                        mouseState = MouseState.BottleDragged;
-                    else if (hit.transform.name == "Note-Object")
-                        mouseState = MouseState.NoteDragged;
+                    mouseState = MouseState.Dragged; // Indicate that the mouse is potentially dragging object
+
+                    // Figure out if the mouse has hit any object when it started dragging
+                    Ray ray = sessionOrigin.camera.ScreenPointToRay(mousePrevPos);
+                    if (Physics.Raycast(ray, out RaycastHit hit, 10))
+                    {
+                        if (hit.transform.name == "Bottle")
+                            mouseState = MouseState.BottleDragged;
+                        else if (hit.transform.name == "Note-Object")
+                            mouseState = MouseState.NoteDragged;
+                    }
                 }
             }
             // If the bottle is dragged
@@ -95,7 +103,8 @@ public class ARManager : MonoBehaviour
                 );
             }
             // Update the previous mouse position
-            mousePrevPos = mouseNewPos;
+            if (mouseState != MouseState.Down)
+                mousePrevPos = mouseNewPos;
         }
     }
 
@@ -112,7 +121,7 @@ public class ARManager : MonoBehaviour
         else if (Input.GetMouseButton(0))
         {
             mouseNewPos = Input.mousePosition;
-            // If the position of the mouse has changed return true
+            // If the position of the mouse has changed by significant amount, return true
             return (mouseNewPos != mousePrevPos) ? true : false;
         }
         else
