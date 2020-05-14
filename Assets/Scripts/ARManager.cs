@@ -10,6 +10,8 @@ public class ARManager : MonoBehaviour
     public GameObject bottle;
     public GameObject noteContainer;
     public GameObject note;
+    public GameObject menu;
+    public GameObject menuButton;
     public float dragSpeedX = 0.001f;
     public float dragSpeedY = 0.0001f;
     public float minDragDistance = 5.0f;
@@ -17,22 +19,37 @@ public class ARManager : MonoBehaviour
     // Private Fields
     private Vector3 mouseNewPos;
     private Vector3 mousePrevPos;
-    enum MouseState { Up = 0, Down = 1, Dragged = 2, BottleDragged = 3, NoteDragged = 4 }
+    private enum MouseState { Up = 0, Down = 1, Dragged = 2, BottleDragged = 3, NoteDragged = 4 }
     private MouseState mouseState;
+    private enum GameState { Active = 0, Paused = 1, JustUnpaused = 2 }
+    private GameState gameState;
 
-    void Start()
+void Start()
     {
         // Setup the visibility of objects
         block.SetActive(true);
         bottle.SetActive(false);
         noteContainer.SetActive(false);
+        menu.SetActive(false);
+        menuButton.SetActive(true);
         mouseState = MouseState.Up;
+        gameState = GameState.Active;
 
         //Debug.Log("Program Started");
     }
 
     void Update()
     {
+        // Don't update anything if applicatoins is paused
+        if (gameState == GameState.Paused)
+            return;
+        // If the game was just unpaused, set gamestate to active and exit this function
+        else if (gameState == GameState.JustUnpaused)
+        {
+            gameState = GameState.Active;
+            return;
+        }
+
         // If click has been released on any part of the screen
         if (Input.GetMouseButtonUp(0))
         {
@@ -106,6 +123,12 @@ public class ARManager : MonoBehaviour
             if (mouseState != MouseState.Down)
                 mousePrevPos = mouseNewPos;
         }
+    }
+
+    public void PauseApplicaiton(bool paused)
+    {
+        // Set game state based on boolean value provided, true for pause, false for unpause
+        gameState = paused ? GameState.Paused : GameState.JustUnpaused;
     }
 
     private bool IsMouseDragged()
