@@ -6,6 +6,7 @@ public class MenuManager : MonoBehaviour
     public GameObject menu;
     public GameObject menuButton;
     public GameObject ARSession;
+    public GameObject usageReport;
 
     public void OnMenuButtonClicked()
     {
@@ -22,13 +23,15 @@ public class MenuManager : MonoBehaviour
 
     public void OnUsageReportClicked()
     {
-        Debug.Log("Usage Report Clicked");
+        menu.SetActive(false);
+        usageReport.SetActive(true);
     }
 
     public void OnCancelButtonClicked()
     {
         //SceneManager.LoadScene(mainSceneName);
         menu.SetActive(false);
+        usageReport.SetActive(false);
         menuButton.SetActive(true);
         ARSession.GetComponent<ARManager>().PauseApplicaiton(false);
     }

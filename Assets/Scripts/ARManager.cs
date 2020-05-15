@@ -1,10 +1,13 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.XR.ARFoundation;
+using UnityEngine.UI;
 
 public class ARManager : MonoBehaviour
 {
     // Editor Fields
+    public float dragSpeedX = 0.001f;
+    public float dragSpeedY = 0.0001f;
+    public float minDragDistance = 5.0f;
     public ARSessionOrigin sessionOrigin;
     public GameObject block;
     public GameObject bottle;
@@ -12,9 +15,12 @@ public class ARManager : MonoBehaviour
     public GameObject note;
     public GameObject menu;
     public GameObject menuButton;
-    public float dragSpeedX = 0.001f;
-    public float dragSpeedY = 0.0001f;
-    public float minDragDistance = 5.0f;
+    public GameObject usageReport;
+    public Text ans_1;
+    public Text ans_2;
+    public Text ans_3;
+    public Text ans_4;
+    public Text ans_5;
 
     // Private Fields
     private Vector3 mouseNewPos;
@@ -31,9 +37,16 @@ void Start()
         bottle.SetActive(false);
         noteContainer.SetActive(false);
         menu.SetActive(false);
+        usageReport.SetActive(false);
         menuButton.SetActive(true);
         mouseState = MouseState.Up;
         gameState = GameState.Active;
+
+        ans_1.text = "123";
+        ans_2.text = "234";
+        ans_3.text = "345";
+        ans_4.text = "456";
+        ans_5.text = "567";
 
         //Debug.Log("Program Started");
     }
