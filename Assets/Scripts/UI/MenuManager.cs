@@ -3,20 +3,20 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
+    public GameObject aRSession;
     public GameObject menu;
     public GameObject menuButton;
-    public GameObject ARSession;
     public GameObject usageReport;
 
     public void OnMenuButtonClicked()
     {
-        menu.SetActive(true);
+        aRSession.GetComponent<ARManager>().PauseApplicaiton(true);
+        usageReport.SetActive(false);
         menuButton.SetActive(false);
-        // Pause the application
-        ARSession.GetComponent<ARManager>().PauseApplicaiton(true);
+        menu.SetActive(true);
     }
 
-    public void OnResetClicked()
+    public void OnResetAppClicked()
     {
         SceneManager.LoadScene("Main");
     }
@@ -27,12 +27,21 @@ public class MenuManager : MonoBehaviour
         usageReport.SetActive(true);
     }
 
-    public void OnCancelButtonClicked()
+    public void OnBackToAppClicked()
     {
-        //SceneManager.LoadScene(mainSceneName);
         menu.SetActive(false);
         usageReport.SetActive(false);
         menuButton.SetActive(true);
-        ARSession.GetComponent<ARManager>().PauseApplicaiton(false);
+        aRSession.GetComponent<ARManager>().PauseApplicaiton(false);
+    }
+
+    public void OnCloseAppClicked()
+    {
+        Debug.Log("Close Clicked");
+    }
+
+    public void OnResetCountsClicked()
+    {
+        Debug.Log("Reset Counts Clicked");
     }
 }
