@@ -18,7 +18,7 @@ public class MenuManager : MonoBehaviour
 
     public void OnResetAppClicked()
     {
-        SceneManager.LoadScene("Main");
+        aRSession.GetComponent<ARManager>().ResetApplication();
     }
 
     public void OnUsageReportClicked()
@@ -37,11 +37,11 @@ public class MenuManager : MonoBehaviour
 
     public void OnCloseAppClicked()
     {
-        Debug.Log("Close Clicked");
+        aRSession.GetComponent<ARManager>().CloseApplication();
     }
 
     public void OnResetCountsClicked()
     {
-        Debug.Log("Reset Counts Clicked");
+        aRSession.GetComponent<ARManager>().ResetUsageReport();
     }
 }
