@@ -12,13 +12,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9a82dfb73816749069ea6b9948fa2f36, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
+  m_Volume: 0.7
+  m_Pitch: 0.8
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 0
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -104,9 +104,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 546394081202638791}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -138,6 +138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &2621598196870997868
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -146,9 +147,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 670910864344049700}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -180,6 +181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &3277319144664051363
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -188,9 +190,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5622493858435054368}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -222,6 +224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &166920150597464939
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -230,9 +233,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2728863494639652277}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -264,6 +267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &8553079708206271851
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -272,9 +276,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1223305286605430845}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -306,6 +310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &540415972946955533
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -314,9 +319,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2454592560794869401}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -348,6 +353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &1542749747873297425
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -356,9 +362,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 271676331073321206}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -390,6 +396,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &2133703175815583277
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -398,9 +405,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6823371330994515847}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -432,6 +439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &1816922779771266013
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -440,9 +448,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7130401602958061163}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -474,6 +482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &7606167097545974379
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -482,9 +491,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1515850866201110017}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -516,6 +525,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &7116611882738239248
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -524,9 +534,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3846359099596179718}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -558,6 +568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &2413673712229368278
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -566,9 +577,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5154274922076674813}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -600,6 +611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &7916720067187377508
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -608,9 +620,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3472351695016076013}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -642,6 +654,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &7916098866928060762
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -650,9 +663,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7915600403804961833}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -684,6 +697,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &5050343116386377386
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -692,9 +706,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1402656982794015057}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -726,6 +740,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &656449655976666480
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -734,9 +749,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6564235980470911504}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -768,6 +783,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &5229552774655710496
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -776,9 +792,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7437705432998793798}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -810,6 +826,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &3522211597808993555
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -818,9 +835,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6955539146238830211}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -852,6 +869,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &2967155699409080448
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -860,9 +878,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9118437389990646555}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -894,6 +912,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &59635430318508256
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -902,9 +921,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4292214524545742146}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -936,6 +955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &8916816633818291540
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -944,9 +964,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6957004446735365852}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -978,6 +998,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &6639757135004687004
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -986,9 +1007,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8729190094808135722}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1020,6 +1041,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &99993165056266564
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1028,9 +1050,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7282281263264153684}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1062,6 +1084,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &7788812049224267563
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1070,9 +1093,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8453440958144406533}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1104,6 +1127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &2745530347886086315
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1112,9 +1136,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4587840648629367181}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1146,6 +1170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &770126064878200316
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1154,9 +1179,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1287844725291810692}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1188,6 +1213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &4792644666443456338
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1196,9 +1222,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8515189058280836577}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1230,6 +1256,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &966049342026493918
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1238,9 +1265,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 341561979114027440}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1272,6 +1299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &1401851525078618907
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1280,9 +1308,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2006942010019030838}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1314,6 +1342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &298317622222973732
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1322,9 +1351,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6748822375133336059}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1356,6 +1385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &3944677682933240466
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1364,9 +1394,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3572682378269274594}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1398,6 +1428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &6992365150158170604
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1406,9 +1437,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5081144083783043754}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1440,6 +1471,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &470049787649826646
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1448,9 +1480,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5397959682956429367}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1482,6 +1514,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &5211548458862737590
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1490,9 +1523,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5696707883376949889}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1524,6 +1557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &2387818244152874455
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1532,9 +1566,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3292316984579819915}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1566,6 +1600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &5312676679732270211
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1574,9 +1609,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1532413754728939961}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1608,6 +1643,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &240991796807157266
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1616,9 +1652,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3627696982774964914}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1650,6 +1686,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &8978326446643210021
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1658,9 +1695,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6904212336287394594}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1692,6 +1729,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &7189404607050375528
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1700,9 +1738,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4511187108138299560}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1734,6 +1772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &7694673832310602350
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1742,9 +1781,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2753255705650855226}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1776,6 +1815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &7491714520236168103
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1784,9 +1824,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9124941503388951685}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1818,6 +1858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &9139599939705794638
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1826,9 +1867,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6882992171704532135}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1860,6 +1901,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &3732095358957478032
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1868,9 +1910,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3759885971194565380}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1902,6 +1944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &7843719714413763829
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1910,9 +1953,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 22152297230311453}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1944,6 +1987,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &7637428364760162404
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1952,9 +1996,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1576417478840767500}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1986,6 +2030,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &4714592705156536563
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1994,9 +2039,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6310084145406672430}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -2028,6 +2073,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &4847889421278950164
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2036,9 +2082,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 264833340602906491}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -2070,6 +2116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &3380471095532982174
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2078,9 +2125,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4289982877841443714}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -2112,6 +2159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &5959959234619770069
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2120,9 +2168,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9155075321021481505}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -2154,6 +2202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &1591111707698412304
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2162,9 +2211,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1550127251932911322}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -2196,6 +2245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &1721559452321592154
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2204,9 +2254,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3905989451727152197}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -2238,6 +2288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &6752536239859668862
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2246,9 +2297,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4981521228309572538}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -2280,6 +2331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &3418003412716349914
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2288,9 +2340,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 635326223118586277}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -2322,6 +2374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &2463993954180566814
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2330,9 +2383,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4809895041850699381}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -2364,6 +2417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &2583732004057920342
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2372,9 +2426,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5713643393362911257}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -2406,6 +2460,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &6697258690418633605
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2414,9 +2469,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 773642774431661626}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -2448,6 +2503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &6997342128033656270
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2456,9 +2512,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6415263407105494806}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -2490,6 +2546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &1434797980030854849
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2498,9 +2555,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3331614504299043269}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -2532,6 +2589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &2650280094100341350
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2540,9 +2598,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3886703830485287861}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -2574,6 +2632,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &5651544947020454246
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2582,9 +2641,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8125145222213162089}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -2616,6 +2675,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &30643361936317288
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2624,9 +2684,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 70206392182486666}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -2658,6 +2718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &15265858653512963
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2666,9 +2727,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7736724491856440806}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -2700,6 +2761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &3691048708362202081
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2708,9 +2770,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2656546929005732405}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -2742,6 +2804,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &6843957104673551363
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2750,9 +2813,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5608232118078227179}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -2784,6 +2847,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &2279494738174929903
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2792,9 +2856,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7667083602079640923}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -2826,6 +2890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &1394153135143548519
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2834,9 +2899,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 369425348558761340}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -2868,6 +2933,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &7060141936867232537
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2876,9 +2942,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6847546647630180444}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -2910,6 +2976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &678831958586607190
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2918,9 +2985,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2144698880176084593}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -2952,6 +3019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &3068938008951585588
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2960,9 +3028,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5619490032391481272}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -2994,6 +3062,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &3870396930817068824
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3002,9 +3071,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6156665677160076844}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -3036,6 +3105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &7353656848042740655
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3044,9 +3114,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5223161775487229892}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -3078,6 +3148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &3806311488447752568
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3086,9 +3157,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2471203381646097361}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -3120,6 +3191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &5474647659054267895
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3128,9 +3200,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2069933960199405106}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -3162,6 +3234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &4570490762321167399
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3170,9 +3243,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8257414733128688948}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -3204,6 +3277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &3922255901837014499
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3212,9 +3286,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2119207364245450088}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -3246,6 +3320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &8222542933712520757
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3254,9 +3329,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4874251536518184369}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -3288,6 +3363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &7111720522868860294
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3296,9 +3372,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3688718302379283290}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -3330,6 +3406,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &5590159109503656221
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3338,9 +3415,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3881014535768301745}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -3372,6 +3449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &7391794367063671862
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3380,9 +3458,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5926305350373348742}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -3414,6 +3492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &580242425796955200
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3422,9 +3501,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8300105895097534168}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -3456,6 +3535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &3992270921768414422
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3464,9 +3544,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3948618820397148533}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -3498,6 +3578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &4552075291212104367
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3506,9 +3587,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3623081356153267881}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -3540,6 +3621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &5213604761469942851
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3548,9 +3630,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7089219486333732375}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -3582,6 +3664,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &2851754326765091099
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3590,9 +3673,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 784613117831671786}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -3624,6 +3707,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &6719346455526296826
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3632,9 +3716,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9058926464378791007}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -3666,6 +3750,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &8590098178570348869
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3674,9 +3759,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5886127752256667180}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -3708,6 +3793,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &8274064985295571924
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3716,9 +3802,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8103514037303159800}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -3750,6 +3836,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &2673069284772682094
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3758,9 +3845,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3386900513673181791}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -3792,6 +3879,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &2677746834772321139
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3800,9 +3888,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5204711586533627512}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -3834,6 +3922,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &3645058449500582744
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3842,9 +3931,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6453064352823166745}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -3876,6 +3965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &7125234300079797737
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3884,9 +3974,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4856249543311065797}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -3918,6 +4008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &161217929791073028
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3926,9 +4017,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4916271847218612256}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -3960,6 +4051,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &4117438875510436811
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3968,9 +4060,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2477501906936782449}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -4002,6 +4094,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &5910244610417370517
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4010,9 +4103,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7422494312525117699}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -4044,6 +4137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &542619845367569014
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4052,9 +4146,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8628067451867107069}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -4086,6 +4180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &8994180193492014410
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4094,9 +4189,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6315857762846748821}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -4128,6 +4223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &7461035842304619582
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4136,9 +4232,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5605626039866553905}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -4170,6 +4266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &4633396088343842881
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4178,9 +4275,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8713360443015904256}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -4212,6 +4309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &4123847837095594744
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4220,9 +4318,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7928391479627311891}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -4254,6 +4352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &5499158135166627376
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4262,9 +4361,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5009239231359409452}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -4296,6 +4395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &6739267294510950388
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4304,9 +4404,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1776515472501076306}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -4338,6 +4438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &773957181031091710
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4346,9 +4447,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3844608299852757843}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -4380,6 +4481,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &2985039683304959132
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4388,9 +4490,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4992545502352395875}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -4422,6 +4524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &18821376778640340
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4430,9 +4533,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6626126404176580697}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -4464,6 +4567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &3249694283802119933
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4472,9 +4576,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1816396547893495044}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -4506,6 +4610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!54 &7826834521578215032
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4514,9 +4619,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7653399662442115518}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 10
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_Drag: 13
+  m_AngularDrag: 0.01
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -4548,6 +4653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e08a6552891445d973403419ccfbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyInSeconds: 2
 --- !u!1001 &4626847047675676773
 PrefabInstance:
   m_ObjectHideFlags: 0

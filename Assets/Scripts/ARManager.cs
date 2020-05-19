@@ -184,7 +184,6 @@ public class ARManager : MonoBehaviour
     public void ResetApplication()
     {
         SaveReportData();
-        SceneManager.LoadScene("Main");
     }
 
     // Figure out if application should be reset
