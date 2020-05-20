@@ -9,10 +9,11 @@ public class MenuManager : MonoBehaviour
 
     public void OnMenuButtonClicked()
     {
-        mainContainer.GetComponent<ARManager>().PauseApplicaiton(true);
         usageReport.SetActive(false);
         menuButton.SetActive(false);
         menu.SetActive(true);
+        mainContainer.GetComponent<ARManager>().PauseApplicaiton(true);
+        mainContainer.GetComponent<ARManager>().ActivateAutoReset();
     }
 
     public void OnResetAppClicked()
@@ -24,6 +25,7 @@ public class MenuManager : MonoBehaviour
     {
         menu.SetActive(false);
         usageReport.SetActive(true);
+        mainContainer.GetComponent<ARManager>().ActivateAutoReset();
     }
 
     public void OnBackToAppClicked()
@@ -32,6 +34,7 @@ public class MenuManager : MonoBehaviour
         usageReport.SetActive(false);
         menuButton.SetActive(true);
         mainContainer.GetComponent<ARManager>().PauseApplicaiton(false);
+        mainContainer.GetComponent<ARManager>().ActivateAutoReset();
     }
 
     public void OnCloseAppClicked()
@@ -42,5 +45,6 @@ public class MenuManager : MonoBehaviour
     public void OnResetCountsClicked()
     {
         mainContainer.GetComponent<ARManager>().ResetUsageReport();
+        mainContainer.GetComponent<ARManager>().ActivateAutoReset();
     }
 }

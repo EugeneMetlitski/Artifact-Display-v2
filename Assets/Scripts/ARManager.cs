@@ -12,6 +12,7 @@ public class ARManager : MonoBehaviour
     public float dragSpeedY = 0.0001f;
     public float minDragDistance = 5.0f;
     public ARSessionOrigin sessionOrigin;
+    public GameObject screenContent;
     public GameObject block;
     public GameObject bottle;
     public GameObject noteContainer;
@@ -32,6 +33,8 @@ public class ARManager : MonoBehaviour
     private MouseState mouseState;
     private enum GameState { Active = 0, Paused = 1, JustUnpaused = 2 }
     private GameState gameState;
+    private bool startResetCountdown;
+    private bool restartResetCountdown;
 
     void Start()
     {
@@ -46,6 +49,8 @@ public class ARManager : MonoBehaviour
         // Set the states of mouse and game/application
         mouseState = MouseState.Up;
         gameState = GameState.Active;
+        startResetCountdown = false;
+        restartResetCountdown = false;
 
         // Load the report data from file
         LoadReportData();
@@ -56,6 +61,9 @@ public class ARManager : MonoBehaviour
 
     void Update()
     {
+        // Figure out if application should be reset
+        if (startResetCountdown) AutoResetApplication();
+
         // Don't update anything if applicatoins is paused
         if (gameState == GameState.Paused)
             return;
@@ -65,9 +73,6 @@ public class ARManager : MonoBehaviour
             gameState = GameState.Active;
             return;
         }
-
-        // Figure out if application should be reset
-        AutoResetApplication();
 
         // If click has been released on any part of the screen
         if (Input.GetMouseButtonUp(0))
@@ -84,6 +89,7 @@ public class ARManager : MonoBehaviour
                     block.GetComponent<Distructible>().Destroy();
                     // Increase the # times block was clicked for report
                     ans_2.text = (Int32.Parse(ans_2.text) + 1).ToString();
+                    ActivateAutoReset();
                 }
                 else if (hit.transform.name == "Bottle")
                 {
@@ -91,17 +97,14 @@ public class ARManager : MonoBehaviour
                     bottle.GetComponent<Distructible>().Destroy();
                     // Increase the # times bottle was clicked for report
                     ans_3.text = (Int32.Parse(ans_3.text) + 1).ToString();
+                    ActivateAutoReset();
                 }
                 else if (hit.transform.name == "Note-Object")
                 {
                     note.GetComponent<Rotate>().RotateAround();
                     // Increase the # times note was clicked for report
                     ans_4.text = (Int32.Parse(ans_4.text) + 1).ToString();
-                }
-                else if (hit.transform.name == "Screen")
-                {
-                    // Increase the # times note was clicked for report
-                    ans_5.text = (Int32.Parse(ans_5.text) + 1).ToString();
+                    ActivateAutoReset();
                 }
             }
             mouseState = MouseState.Up;
@@ -139,6 +142,7 @@ public class ARManager : MonoBehaviour
                     bottle.transform.position.y,
                     bottle.transform.position.z + (mouseNewPos.y - mousePrevPos.y) * dragSpeedY
                 );
+                ActivateAutoReset();
             }
             // If the note is dragged
             else if (mouseState == MouseState.NoteDragged)
@@ -148,6 +152,7 @@ public class ARManager : MonoBehaviour
                     noteContainer.transform.position.y,
                     noteContainer.transform.position.z + (mouseNewPos.y - mousePrevPos.y) * dragSpeedY
                 );
+                ActivateAutoReset();
             }
             // Update the previous mouse position
             if (mouseState != MouseState.Down)
@@ -173,7 +178,7 @@ public class ARManager : MonoBehaviour
     public void ResetUsageReport()
     {
         // Set the data to text fields
-        ans_1.text = "0";
+        ans_1.text = "1";
         ans_2.text = "0";
         ans_3.text = "0";
         ans_4.text = "0";
@@ -184,13 +189,32 @@ public class ARManager : MonoBehaviour
     public void ResetApplication()
     {
         SaveReportData();
+        SceneManager.LoadScene("Image_Recognition");
+    }
+
+    // Public function that lets other objects trigger reset countdown
+    public void ActivateAutoReset()
+    {
+        startResetCountdown = true;
+        restartResetCountdown = true;
+    }
+
+    // Update the Usage Report with number of times screen was clicked
+    public void RecordScreenClicked()
+    {
+        // Increase the # times note was clicked for report
+        ans_5.text = (Int32.Parse(ans_5.text) + 1).ToString();
+        ActivateAutoReset();
     }
 
     // Figure out if application should be reset
     private void AutoResetApplication()
     {
-        if (Input.anyKeyDown)
+        if (restartResetCountdown)
+        {
+            restartResetCountdown = false;
             CancelInvoke();
+        }
         else
             Invoke("ResetApplication", secondsBeforeReset);
     }
@@ -227,6 +251,8 @@ public class ARManager : MonoBehaviour
 
         if (PlayerPrefs.HasKey("ans_1")) // load # of sessions
             ans_1.text = PlayerPrefs.GetInt("ans_1").ToString();
+        else // If no data has been saved previously to file
+            ans_1.text = "0"; // set number of sessions to 0
         if (PlayerPrefs.HasKey("ans_2")) // load # of times block clicked
             ans_2.text = PlayerPrefs.GetInt("ans_2").ToString();
         if (PlayerPrefs.HasKey("ans_3")) // load # of times bottle clicked

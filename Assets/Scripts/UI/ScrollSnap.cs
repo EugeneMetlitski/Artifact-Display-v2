@@ -8,6 +8,8 @@ using System.Collections.Generic;
 [RequireComponent(typeof(ScrollRect))]
 public class ScrollSnap : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler {
 
+    [Tooltip("The GameObject which contains ARManager script")]
+    public GameObject mainContent;
     [Tooltip("Container where the images are located")]
     public RectTransform container;
     [Tooltip("Button to the next image")]
@@ -35,6 +37,7 @@ public class ScrollSnap : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDr
     // number of pages in container
     private int _pageCount;
     private int _currentPage;
+    private bool _wasButtonClicked;
 
     // whether lerping is in progress and target lerp position
     private bool _lerp;
@@ -52,6 +55,7 @@ public class ScrollSnap : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDr
         _scrollRectComponent = GetComponent<ScrollRect>();
         _scrollRectRect = GetComponent<RectTransform>();
         _pageCount = container.childCount;
+        _wasButtonClicked = false;
 
         _lerp = false;
 
@@ -81,7 +85,7 @@ public class ScrollSnap : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDr
                 // clear also any scrollrect move that may interfere with our lerping
                 _scrollRectComponent.velocity = Vector2.zero;
                 // Set the visibility of buttons
-                SetButtonsVisibility();
+                SetButtonsVisibility(false, false);
             }
         }
     }
@@ -122,15 +126,15 @@ public class ScrollSnap : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDr
         aPageIndex = Mathf.Clamp(aPageIndex, 0, _pageCount - 1);
         container.anchoredPosition = _pagePositions[aPageIndex];
         _currentPage = aPageIndex;
-        SetButtonsVisibility();
+        SetButtonsVisibility(true, true);
     }
 
-    public void LerpToPage(int aPageIndex) {
+    private void LerpToPage(int aPageIndex) {
         aPageIndex = Mathf.Clamp(aPageIndex, 0, _pageCount - 1);
         _lerpTo = _pagePositions[aPageIndex];
         _lerp = true;
         _currentPage = aPageIndex;
-        SetButtonsVisibility();
+        SetButtonsVisibility(true, false);
     }
 
     private void NextScreen() {
@@ -206,11 +210,42 @@ public class ScrollSnap : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDr
         }
     }
 
-    private void SetButtonsVisibility()
+    private void SetButtonsVisibility(bool isButtonClicked, bool isSetPage)
     {
-        if (_currentPage == 0) btnPrev.SetActive(false);
-        else if (_currentPage == _pageCount - 1) btnNextText.text = "Back to\nSTART";
-        else if (btnPrev.activeSelf == false) btnPrev.SetActive(true);
-        else if (btnNextText.text == "Back to\nSTART") btnNextText.text = "NEXT\nscreen";
+        if (isButtonClicked)
+        {
+            _wasButtonClicked = true;
+            // If first page
+            if (_currentPage == 0) btnPrev.SetActive(false);
+            // If last page
+            else if (_currentPage == _pageCount - 1) btnNextText.text = "Back to\nSTART";
+            // If neither first or last page, but the btnPrev is not active
+            else if (btnPrev.activeSelf == false) btnPrev.SetActive(true);
+            // If neither first or last page, but the btnNext sais "Back to\nSTART"
+            else if (btnNextText.text == "Back to\nSTART") btnNextText.text = "NEXT\nscreen";
+
+            // Record that the screen was clicked in Usage Report
+            if (!isSetPage) mainContent.GetComponent<ARManager>().RecordScreenClicked();
+        }
+        else
+        {
+            // If the button was clicke, means screen was not dragged
+            if (_wasButtonClicked)
+                _wasButtonClicked = false;
+            else
+            {
+                // If first page
+                if (_currentPage == 0) btnPrev.SetActive(false);
+                // If last page
+                else if (_currentPage == _pageCount - 1) btnNextText.text = "Back to\nSTART";
+                // If neither first or last page, but the btnPrev is not active
+                else if (btnPrev.activeSelf == false) btnPrev.SetActive(true);
+                // If neither first or last page, but the btnNext sais "Back to\nSTART"
+                else if (btnNextText.text == "Back to\nSTART") btnNextText.text = "NEXT\nscreen";
+
+                // Record that the screen was clicked in Usage Report
+                mainContent.GetComponent<ARManager>().RecordScreenClicked();
+            }
+        }
     }
 }
