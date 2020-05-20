@@ -14,6 +14,8 @@ public class ScrollSnap : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDr
     public GameObject btnNext;
     [Tooltip("Button to the previous image")]
     public GameObject btnPrev;
+    [Tooltip("Text object for Next button")]
+    public Text btnNextText;
 
     // Set starting page index - starting from 0
     private int startingPage = 0;
@@ -78,6 +80,8 @@ public class ScrollSnap : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDr
                 _lerp = false;
                 // clear also any scrollrect move that may interfere with our lerping
                 _scrollRectComponent.velocity = Vector2.zero;
+                // Set the visibility of buttons
+                SetButtonsVisibility();
             }
         }
     }
@@ -118,17 +122,25 @@ public class ScrollSnap : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDr
         aPageIndex = Mathf.Clamp(aPageIndex, 0, _pageCount - 1);
         container.anchoredPosition = _pagePositions[aPageIndex];
         _currentPage = aPageIndex;
+        SetButtonsVisibility();
     }
 
-    private void LerpToPage(int aPageIndex) {
+    public void LerpToPage(int aPageIndex) {
         aPageIndex = Mathf.Clamp(aPageIndex, 0, _pageCount - 1);
         _lerpTo = _pagePositions[aPageIndex];
         _lerp = true;
         _currentPage = aPageIndex;
+        SetButtonsVisibility();
     }
 
     private void NextScreen() {
-        LerpToPage(_currentPage + 1);
+        if (btnNextText.text == "Back to\nSTART")
+        {
+            btnNextText.text = "NEXT\nscreen";
+            LerpToPage(0);
+        }
+        else
+            LerpToPage(_currentPage + 1);
     }
 
     private void PreviousScreen() {
@@ -192,5 +204,13 @@ public class ScrollSnap : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDr
             // save current position of cointainer
             _startPosition = container.anchoredPosition;
         }
+    }
+
+    private void SetButtonsVisibility()
+    {
+        if (_currentPage == 0) btnPrev.SetActive(false);
+        else if (_currentPage == _pageCount - 1) btnNextText.text = "Back to\nSTART";
+        else if (btnPrev.activeSelf == false) btnPrev.SetActive(true);
+        else if (btnNextText.text == "Back to\nSTART") btnNextText.text = "NEXT\nscreen";
     }
 }
