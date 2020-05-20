@@ -45,6 +45,15 @@ public class MenuManager : MonoBehaviour
     public void OnResetCountsClicked()
     {
         mainContainer.GetComponent<ARManager>().ResetUsageReport();
-        mainContainer.GetComponent<ARManager>().ActivateAutoReset();
+    }
+
+    public void OnChangeResetTimeMinus()
+    {
+        mainContainer.GetComponent<ARManager>().ChangeResetTime(-10);
+    }
+
+    public void OnChangeResetTimePlus()
+    {
+        mainContainer.GetComponent<ARManager>().ChangeResetTime(10);
     }
 }
