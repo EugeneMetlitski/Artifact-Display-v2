@@ -57,6 +57,9 @@ public class ARManager : MonoBehaviour
         reportData = new ReportData(ans_1, ans_2, ans_3, ans_4, ans_5, ans_6);
         // Get the AutoReset time
         secondsBeforeReset = reportData.GetResetTime();
+
+        // Prevent screen from going to sleep
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
     }
 
     void Update()
